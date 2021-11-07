@@ -1,7 +1,7 @@
 const galleryFilter = document.querySelector('.gallery-filter'),
 	galleryItems = document.querySelectorAll('.gallery-item');
 
-galleryFilter.addEventListener('click', function (event) {
+galleryFilter.addEventListener('click', (event) => {
 	if (event.target.classList.contains('filter-item')) {
 		// deactivate existing active 'filter-item'
 		galleryFilter.querySelector('.active').classList.remove('active');
@@ -18,5 +18,4 @@ galleryFilter.addEventListener('click', function (event) {
 			}
 		});
 	}
-	// console.log(event.target);
 });
